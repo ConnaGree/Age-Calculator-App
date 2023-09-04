@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calender__cal-container">
+    <div class="input__field-container">
+      <!----------------- DAY INPUT ---------------->
+      <div class="day__input">
+        <p class="day__header header">DAY</p>
+        <input type="text" class="day__input input-field" placeholder="DD">
+        <p class="day__error error">Must be valid day</p>
+      </div>
+
+      <!--=-------------- MONTH INPUT ----------------->
+      <div class="month__input">
+        <p class="month__header header">MONTH</p>
+        <input type="text" class="month__input input-field" placeholder="MM">
+        <p class="month__error error">Must be a valid month</p>
+      </div>
+
+      <!---------------- YEAR INPUT ---------------> 
+      <div class="year__input">
+        <p class="year__header header">YEAR</p>
+        <input type="text" class="year__input input-field" placeholder="YYYY">
+        <p class="year__error error">Must be in the past</p>
+      </div>
+    </div>
+
+    <!----------------- BUTTON SECTION ------------->
+    <div class="cal__button-container">
+      <div class="line">
+        <button class="cal__button"><img src="assets/images/icon-arrow.svg" alt=""></button>
+      </div>
+    </div>
+
+
+
+    <div class="date__display-container">
+      <h2 class="year__display display"><span class="value">- -</span> years</h2>
+      <h2 class="months__display display"><span class="value">- -</span> months</h2>
+      <h2 class="year__display display"><span class="value">- -</span> days</h2>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Zerubabel</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
